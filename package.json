@@ -1,0 +1,48 @@
+{
+  "name": "ZCP_ASCEND",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.3",
+    "express": "^4",
+    "hdb": "^0.19.0",
+    "install": "^0.13.0",
+    "passport": "^0.6.0"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.7",
+    "cds-launchpad-plugin": "^1.0.9",
+    "rimraf": "^3.0.2",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-patternui": "cds watch --open patternui/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy ZCP_ASCEND --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql"
+      },
+      "uaa": {
+        "kind": "dummy"
+      },
+      "auth": {
+        "kind": "dummy"
+      }
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  },
+  "sapux": [
+    "app/patternui"
+  ]
+}

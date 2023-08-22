@@ -1,0 +1,153 @@
+_schema-version: "3.1"
+ID: ZCP_ASCEND
+description: A simple CAP project.
+version: 1.0.0
+modules:
+  - name: ZCP_ASCEND-srv
+    type: nodejs
+    path: gen/srv
+    requires:
+      - name: ZCP_ASCEND-hdi
+      - name: ZCP_ASCEND-uaa
+      - name: ZCP_ASCEND-dest-srv
+      - name: ZCP_ASCEND-conn
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+    parameters:
+      buildpack: nodejs_buildpack
+      disk-quota: 4096M
+      memory: 8192M
+    build-parameters:
+      builder: npm-ci
+  - name: ZCP_ASCEND-dest-content
+    type: com.sap.application.content
+    requires:
+      - name: ZCP_ASCEND-dest-srv
+        parameters:
+          content-target: true
+      - name: ZCP_ASCEND-repo-host
+        parameters:
+          service-key:
+            name: ZCP_ASCEND-repo-host-key
+      - name: ZCP_ASCEND-uaa
+        parameters:
+          service-key:
+            name: ZCP_ASCEND-uaa-key
+    parameters:
+      content:
+        instance:
+          destinations:
+            - Name: ZCP_ASCEND-repo-host
+              ServiceInstanceName: ZCP_ASCEND-html5-srv
+              ServiceKeyName: ZCP_ASCEND-repo-host-key
+              sap.cloud.service: com.deloitte.btp.patternui
+            - Authentication: OAuth2UserTokenExchange
+              Name: ZCP_ASCEND-uaa
+              ServiceInstanceName: ZCP_ASCEND-uaa
+              ServiceKeyName: ZCP_ASCEND-uaa-key
+              sap.cloud.service: com.deloitte.btp.patternui
+          existing_destinations_policy: ignore
+    build-parameters:
+      no-source: true
+  - name: ZCP_ASCEND-db-deployer
+    type: hdb
+    path: gen/db
+    requires:
+      - name: ZCP_ASCEND-hdi
+    parameters:
+      buildpack: nodejs_buildpack
+  - name: ZCP_ASCEND-app-content
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: ZCP_ASCEND-repo-host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - artifacts:
+            - comdeloittebtppatternui.zip
+          name: comdeloittebtppatternui
+          target-path: resources/
+  - name: comdeloittebtppatternui
+    type: html5
+    path: app/patternui
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:cf
+      supported-platforms:
+        []
+resources:
+  - name: ZCP_ASCEND-dest-srv
+    type: org.cloudfoundry.managed-service
+    parameters:
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          subaccount:
+            existing_destinations_policy: update
+            destinations:
+              - Name: ZCP_ASCEND-srv
+                Description: ZCP ASCEND CAP service
+                Authentication: NoAuthentication
+                ProxyType: Internet
+                Type: HTTP
+                URL: ~{srv-api/srv-url}
+                HTML5.DynamicDestination: true
+                HTML5.ForwardAuthToken: true
+              - Name: ZCP_ASCENDExt-srv
+                Description: ZCP ASCEND Destination
+                Authentication: OAuth2UserTokenExchange
+                ProxyType: Internet
+                Type: HTTP
+                URL: ~{srv-api/srv-url}
+                HTML5.DynamicDestination: true
+                HTML5.ForwardAuthToken: true
+      service: destination
+      service-name: ZCP_ASCEND-dest-srv
+      service-plan: lite
+    requires:
+      - name: srv-api
+  - name: ZCP_ASCEND-repo-host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-name: ZCP_ASCEND-html5-srv
+      service-plan: app-host
+  - name: ZCP_ASCEND-uaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      config:
+        xsappname: ZCP_ASCEND-${space}
+      path: ./xs-security.json
+      service: xsuaa
+      service-name: ZCP_ASCEND-uaa
+      service-plan: application
+  - name: ZCP_ASCEND-hdi
+    type: com.sap.xs.hdi-container
+    parameters:
+      config: null
+      schema: ZCP-ASCEND
+      service: hana
+      service-plan: hdi-shared
+    properties:
+      hdi-service-name: ${service-name}
+  - name: ZCP_ASCEND-conn
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: connectivity
+      service-plan: lite
+parameters:
+  deploy_mode: html5-repo
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm install --production
+        - npx -p @sap/cds-dk cds build --production

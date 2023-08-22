@@ -1,0 +1,96 @@
+Pattern_Name,Pattern_ID,Description,Keyword,Critical
+Yellow,ABAP001,Creating custom tables in S/4HANA using Transaction Code SE11,"Custom, Tables, HANA",2
+Yellow,ABAP003,Create and modify Odata APIs in S/4HANA using Transaction Code SEGW,"Odata, API, HANA, SEGW",2
+Red,ABAP004,Extending non-whitelisted BAPIs using the traditional approach in S/4HANA,"Extending, BAPI, HANA",1
+Red,ABAP005,Unreleased RFC is not allowed to be exposed,"Unreleased, RFC",1
+Yellow,ABAP006,Creating custom CDS views using Eclipse,"Custom, CDS, Views",2
+Yellow,ABAP007,Overriding metadata annotations of SAP delivered CDS views using Eclipse,"Overriding, Metadata, CDS, Views",2
+Yellow,ABAP008,Creating custom ABAP DDIC objects in S/4HANA using Transaction Code SE11,"Custom, ABAP, DDIC, HANA, SE11",2
+Red,ABAP009,Modifying an SAP delivered app using extension points,"Modifying, SAP, Extension, Points",1
+Red,ABAP010,Creating a Fiori app and deploy to S4/HANA,"Fiori, Deploy, HANA",1
+Yellow,ABAP011,Implement Classical BADI,"Implement, Classical, BADI",2
+Red,ABAP012,User Exits CMOD and SMOD - For Digital Core this pattern is Red. Note: SAP classifies it as yellow.,"User, Exits, CMOD, SMOD",1
+Red,ABAP013,Implicit / Explicit Enhancement spots,"Enhancement, Spots",1
+Yellow,ABAP014,"Use Smartforms, Sapscript and Interactive Adobe forms both as out-of-the-box or with customizations in S/4HANA","Smartforms, Sapscript, Adobe, Forms, HANA",2
+Yellow,ABAP015,Catch SAP delivered events using BTE,"Catch, SAP, Events, BTE",2
+Yellow,ABAP016,Create Transaction Code for SAP provided programs,"Transaction, Code, SAP, Programs",2
+Green,ABAP017,Use Substitutions to set replace values,"Substitutions, Replace, Values",3
+Red,ABAP018,Use Substitutions to set replace values with exits,"Substitutions, Replace, Values, Exits",1
+Red,ABAP019,Use SAP ERP Connectors,"ERP, Connectors",1
+Red,ABAP020,"Copy or Clone SAP provided objects (programs, function modules, etc) using SE37, SE38 or SE80","Clone, Programs, Function modules",1
+Yellow,ABAP021,Enhance SAP standard structures using predefined structures,"Enhance, Structures",2
+Yellow,ABAP022,Use of IDOCs to send or receive data,"IDOC, Send, Receive, Data",2
+Yellow,ABAP023,Trigger events using Netweaver Event Add-On for Event Enablement using only recommended function modules,"Trigger, Event, Function, Modules",2
+Red,ABAP024,Trigger events using Netweaver Event Add-On for Event Enablement using customized z function modules,"Trigger, Event, Function, Modules",1
+Yellow,ABAP025,Enhance FPM/WebDynpro Apps in S/4HANA using SAP Enhancement Framework,"FPM, WebDynpro, HANA, Enhancement",2
+Red,ABAP026,Enhance FPM/WebDynpro Apps in S/4HANA using Modification,"FPM, WebDynpro, HANA",1
+Red,ABAP027,Modify standard ABAP Classes,"Modify, ABAP, Classes",1
+Red,ABAP028,Modify standard executable ABAP programs and includes,"Modify, ABAP, Programs, Includes",1
+Red,ABAP029,Modify standard Function Modules,"Modify, Function modules",1
+Yellow,ABAP030,Create / modify custom ABAP Classes,"Custom, ABAP, Classes",2
+Yellow,ABAP031,Create / modify custom executable ABAP programs and includes,"Custom, ABAP, Programs, Includes",2
+Yellow,ABAP032,Create / modify custom Function Modules,"Custom, Function, Modules",2
+Yellow,ABAP033,Extend SAP standard SOAP APIs using Proxy Editor,"SAP, SOAP, API, Proxy, Editor",2
+Yellow,ABAP034,"Create / modify custom ABAP Classes using ""ABAP for Cloud"" version in Eclipse","Custom, ABAP, Classes, Cloud",2
+Red,ABAP035,Use of Unreleased CDS Views,"Unreleased, CDS, Views",1
+Yellow,ABAP036,Use Classical TVARVC,"Classical, TVARVC",2
+Red,ABAP037,"Manually overriding SAP’s metadata or properties, including release contract, on SAP delivered objects","Overriding, Metadata, Objects",1
+Green,ABAP038,Apply SAP fix using SNOTE,"Apply, SAP fix, SNOTE",3
+Red,ABAP039,Use of unreleased SAP APIs,"Unreleased, API",1
+Yellow,ABAP040,Create / modify custom RFCs,"Custom, RFC",2
+Yellow,ABAP041,Out-of-band updates to vendor provided objects/code using proper vendor namespace,"Updates, Objects, Namespace",2
+Red,ABAP042,Modification across vendor namespaces,"Modification, Namespaces",1
+Red,ABAP043,Modify standard ABAP DDIC objects in S/4HANA,"Modify, ABAP, DDIC, HANA",1
+Green,S4H001,Create DB tables in S/4HANA,"Tables, HANA",3
+Green,S4H002,Extend SAP standard BADIs in S/4HANA,"Extend, BADI, HANA",3
+Green,S4H003,Add new fields in S/4HANA,"Add, Fields, HANA",3
+Green,S4H004,Modify whitelisted oData APIs in S/4HANA,"Modify, oData, API, HANA",3
+Green,S4H005,Modify whitelisted CDS views using Custom CDS views in S/4HANA,"Modify, CDS views, Custom, HANA",3
+Green,S4H006,Modify Fiori Apps in S/4HANA,"Modify, Fiori, HANA",3
+Green,S4H007,Do end-user personalization,"End-user, Personalization",3
+Green,S4H008,Modify form in S/4HANA,"Modify, Form, HANA",3
+Green,S4H009,Modify email in S/4HANA,"Modify, Email, HANA",3
+Green,S4H010,Modify queries in S/4HANA,"Modify, Queries, HANA",3
+Green,S4H011,Create an Analytical App in S/4HANA,"Create, Analytical, HANA",3
+Green,S4H012,Configure Flexible Workflow,"Configure, Flexible, Workflow",3
+Yellow,S4H013,Configure Classical Workflow,"Configure, Classical, Workflow",2
+Green,S4H014,Responsibility Management,"Responsibility, Management",3
+Green,S4H015,Create custom Fiori catalog and group,"Custom, Fiori, Catalog, Group",3
+Green,S4H016,Modify form in S/4HANA using Maintain Form Templates,"Modify, HANA, Form, Templates",3
+Green,S4H017,Modify and create e-mail templates using Maintain E-mail Templates,"Modify, Create, E-mail, Templates",3
+Green,S4H018,Create or modify an existing compliance report using SAP ACR,"Compliance, Report, SAP ACR",3
+Green,S4H019,Maintain TVARVC Configuration,"TVARVC, Configuration",3
+Green,S4H020,Create a custom value help object using Custom Reusable Elements,"Custom, Reusable, Elements",3
+Green,SCP001,Create a custom table in HANA Cloud,"Table, HANA, Custom",3
+Green,SCP002,Create a custom table in ABAP Cloud,"Table, ABAP, Custom",3
+Green,SCP003,Create a decision table,"Table, Decision",3
+Green,SCP004,Extend SAP standard BAPIs in ABAP Cloud (Must be released),"Extend, BAPI, ABAP",3
+Green,SCP005,Add new fields using ABAP,"Add, Fields, ABAP",3
+Green,SCP006,Add new fields using HANA Cloud,"Add, Fields, HANA, Cloud",3
+Green,SCP007,Use RAP to create an API,"RAP, API",3
+Green,SCP008,Use CAP to create an API,"CAP, API",3
+Green,SCP009,Create a custom app,"Create, Custom, App",3
+Green,SCP010,Create a custom app using SAP APIs,"Custom, API, SAP",3
+Green,SCP011,Creating a custom Form,"Custom, Form",3
+Green,SCP012,Creating a custom Form with BTP Workflow,"Custom, Form, BTP, Workflow",3
+Green,SCP013,Create a custom email using BTP Workflow,"Create, Custom, Email, BTP, Workflow",3
+Green,SCP014,Create simple configuration tables or rules,"Create, Tables, Rules, Configuration",3
+Green,SCP015,Create custom rules in BTP,"Custom, Rules, BTP",3
+Green,SCP016,Expose SAP standard(released) RFC in ABAP Cloud,"RFC, ABAP",3
+Green,SCP017,Schedule jobs using REST APIs,"Schedule, Jobs, REST, API",3
+Green,SCP018,Create custom business logic using RAP,"Custom, Logic, RAP",3
+Green,SCP019,Create custom business logic using CAP,"Custom, Logic, CAP",3
+Green,SCP020,Create custom Workflow,"Custom, Workflow",3
+Green,SCP021,Create custom portal with SAP Launchpad,"Custom, Portal, Launchpad",3
+Green,SCP022,Catch SAP delivered events using Event Mesh,"SAP, Catch, Event, Mesh",3
+Green,SCP023,Create a new Mobile Card application,"Mobile, Card, Application",3
+Green,SCP024,Create a new Mobile Application or Extend SAP delivered Mobile Application (MDK),"Create, MDK",3
+Green,SCP025,Create a native mobile application for Android,"Native, Mobile, Application, Android",3
+Green,SCP026,Create a native mobile application for IOS,"Native, Mobile, Application, IOS",3
+Green,SCP027,Trigger BTP Workflow,"Trigger, BTP, Workflow",3
+Green,SCP028,Create Process Visibility,"Create, Process, Visibility",3
+Green,SCP029,Create a custom table for sensitive and protected data (SPD),"Table, Custom, SPD",3
+Green,SCP030,Create actionable custom email using BTP Workflow and Outlook,"Custom, Email, BTP, Workflow, Outlook",3
+Red,SCP031,Persisting sensitive and protected data (SPD) in ABAP Cloud,"ABAP, Cloud, SPD",1
+Green,SCP032,Create a configuration table in Maintain Business Configuration,"Table, Configuration, Business",3
+Red,SCP033,Create a transactional or master data table in Maintain Business Configuration,"Table, Configuration, Business",1
