@@ -1,7 +1,8 @@
 const cds = require('@sap/cds');
+const { response } = require('express');
 class CatalogService extends cds.ApplicationService {
     async init() {
-     const { PatternDetails,PatternColor } = this.entities;
+     const { PatternDetails,PatternColor, GeneratePatterns } = this.entities;
      const clientConnect = await cds.connect.to('db');
      //Custom handlers
 
@@ -26,6 +27,13 @@ class CatalogService extends cds.ApplicationService {
        }
        
      return res;
+   });
+
+     this.on('READ', GeneratePatterns, async (req, res) => {
+         var responseS4 = await clientConnect.tx(req).run(req.query);
+
+         console.log(responseS4)
+         return responseS4;
    });
         await super.init()
     }

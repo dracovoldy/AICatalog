@@ -14,4 +14,5 @@ service CatalogService
     ])
      entity PatternDetails as projection on db.PatternDetails;
      entity PatternColor as projection on db.Color;
+     entity GeneratePatterns as projection on db.GeneratePatterns;
 }

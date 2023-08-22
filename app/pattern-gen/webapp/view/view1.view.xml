@@ -1,0 +1,101 @@
+<mvc:View controllerName="patterngen.controller.view1"
+    xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified"
+    xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+	xmlns="sap.m" >
+    <NavContainer id="wizardNavContainer">
+        <pages>
+            <Page id="wizardContentPage"
+            showHeader="false">
+                <content>
+                    <Wizard id="CreateProductWizard" class="sapUiResponsivePadding--header sapUiResponsivePadding--content"
+                            complete="wizardCompletedHandler">
+                        <WizardStep id="ProductTypeStep"
+                                    title="Upload File"
+                                    validated="true">
+                            <MessageStrip class="sapUiSmallMarginBottom"
+                                    text="Upload your file here."
+                                    showIcon="true"/>
+                            <Text class="sapUiSmallMarginBottom"
+                                    text="Patterns are intended for SAP developers. SAP developers must be familiar with Custom Application Development (ABAP) concepts"/>
+                            <HBox
+                                    alignItems="Center"
+                                    justifyContent="Center"
+                                    width="100%">
+                                	<l:VerticalLayout>
+                                        <u:FileUploader
+                                            id="fileUploader"
+                                            name="myFileUpload"
+                                            uploadUrl="upload/"
+                                            tooltip="Upload your file to the local server"
+                                            uploadComplete="handleUploadComplete"/>
+                                        <Button
+                                            text="Upload File"
+                                            press="handleUploadPress"/>
+                                    </l:VerticalLayout>
+                            </HBox>
+                        </WizardStep>
+                        <WizardStep id="ProductInfoStep"
+                                    validated="true"
+                                    title="List of Patterns">
+                            <MessageStrip class="sapUiSmallMarginBottom"
+                                    text="Find the list of patterns here "
+                                    showIcon="true"/>
+                            <Text text="Suggested Patterns"/>
+                            <List
+                                id="list"
+                                mode="SingleSelect"
+                                delete="handleDelete"
+                                enableBusyIndicator="true"
+                                headerText="Patterns"
+                                growing="true"
+                                items="{
+                                    path: '/GeneratePatterns'
+                                }" >
+                                <StandardListItem
+                                    title="{Pattern_ID}"
+                                    description="{Description}"/>
+                            </List>
+                        </WizardStep>
+                        <WizardStep id="OptionalInfoStep"
+                                    validated="true"
+                                    title="Generate Project">
+                            <MessageStrip class="sapUiSmallMarginBottom"
+                                    text="Start generating your project here."
+                                    showIcon="true"/>
+                            <Text text="Additionally, select the required configuration."/>
+                            <form:SimpleForm
+                                    editable="true">
+                                <Label text="Cover photo"/>
+                                    <Label labelFor="rbg1" text="Add FLP Configuration" />
+                                    <RadioButtonGroup id="rbg1" columns="3" width="100%" class="sapUiMediumMarginBottom">
+                                        <RadioButton id="RB1-1" text="Yes" />
+                                        <RadioButton id="RB1-2" text="No" enabled="true" />
+                                    </RadioButtonGroup>
+                                    <Label labelFor="rbg2" text="Add deployment configuration to MTA project" />
+                                    <RadioButtonGroup id="rbg2" columns="3" width="100%" class="sapUiMediumMarginBottom">
+                                        <RadioButton id="RB1-3" text="Yes" />
+                                        <RadioButton id="RB1-4" text="No" enabled="true" />
+                                    </RadioButtonGroup>
+                                    <Label labelFor="rbg3" text="Add DevOps pipeline configuration" />
+                                    <RadioButtonGroup id="rbg3" columns="3" width="100%" class="sapUiMediumMarginBottom">
+                                        <RadioButton id="RB1-5" text="Yes" />
+                                        <RadioButton id="RB1-6" text="No" enabled="true" />
+                                    </RadioButtonGroup>
+                            </form:SimpleForm>
+                        </WizardStep>
+                    </Wizard>
+                </content>
+                <footer>
+                    <OverflowToolbar>
+                        <ToolbarSpacer/>
+                        <Button text="Cancel" press="handleWizardCancel"/>
+                    </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </NavContainer>
+</mvc:View>

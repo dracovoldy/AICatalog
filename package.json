@@ -14,7 +14,7 @@
     "passport": "^0.6.0"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.108.7",
+    "@sap/ux-specification": "^1.108.12",
     "cds-launchpad-plugin": "^1.0.9",
     "rimraf": "^3.0.2",
     "sqlite3": "^5"
@@ -24,7 +24,8 @@
     "watch-patternui": "cds watch --open patternui/webapp/index.html?sap-ui-xx-viewCache=false",
     "undeploy": "cf undeploy ZCP_ASCEND --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-pattern-gen": "cds watch --open pattern-gen/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {

@@ -8,6 +8,11 @@ entity PatternDetails : managed {
   Keyword : String;
   Critical : Integer
 }
+entity GeneratePatterns {
+  key Pattern_ID : String;
+  Pattern_Name  : String;
+  Description  : String;
+}
 entity Color{
   key Color_ID : String;
 }
