@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+DATA09	Data Model	Custom Business Object	"Create a new custom table in S/4HANA	"	This pattern is used when extending an existing application by creating new DB tables/views tied directly to S/4HANA. Use this In-App approach instead of creating a Y/Z objects in the core											

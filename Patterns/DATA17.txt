@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA17	Data Model	CAP - Create custom business logic	"Create custom business logic using CAP	"	This pattern is used when for a  extending an existing application by creating new DB tables/views tied directly to S/4HANA in the CAP layer. Use this In-App approach instead of creating a Y/Z objects in the core.											

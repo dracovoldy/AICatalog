@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA03	Data Model	Custom CDS views - Eclipse	"Creating and modifying CDS views using Eclipse	"	This pattern is used in case where the required CDS view is not whitelisted / when there is no standard view created for a table / when there is need of extra functions like group by/ max/ min to be performed on released/unreleased views.											

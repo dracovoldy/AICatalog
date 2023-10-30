@@ -1,0 +1,21 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI001	Fiori UI	Analytical List Report - ALP	List several objects	"Use the analytical list page if:
+Users need to extract key information to understand the current situation or identify a root cause. The way the data is presented is crucial for giving them the insights they need to take the right action.
+Users need a way to analyze data step by step from different perspectives, investigate a root cause through drilldown, and act on transactional content within one page.
+In addition to the filtered dataset, users need to see the impact of their filter settings in a chart (visual filter).
+Users need to switch between integrated chart and table views (hybrid view).
+Users need to see the impact of their action on a global key performance indicator (KPI).
+Users need to find and act on relevant items out of a large set of items by searching, filtering, sorting, grouping, drilling down, and slicing and dicing.
+Do not use the analytical list page if:
+Drilldown is rarely used, not used at all, or is only needed after navigating to another page, rather than as free or flexible drilldown within the page itself. In this case, a list report might be sufficient for your use case.
+Users need different visualizations for the entire dataset (for example, as a table or chart), but don’t need to work with both visualizations on the same page (for example, in a reporting scenario). In this case, a list report might be sufficient.
+Users need to find and act on relevant items from within a large set of items by searching, filtering, sorting, and grouping, without using drilldown or “slice and dice”. In this case, consider using a list report.
+Users need to work with multiple views of the same content, for example on items that are “Open”, “In Process”, or “Completed”. They want to be able to switch views using tabs, segmented buttons, or a select control. In this case, consider using a list report.
+Users need to see or edit a single item with all its details. Use the object page floorplan instead.
+Users need to find a specific item, and the item or an identifying data point is known to the user (such as a code). In this case, use the initial page floorplan.
+Users need to work through a comparably small set of items, one by one. In this case, use the worklist floorplan.
+Users have a trivial use case that does require the use of a chart, but that do not involve identifying a root cause, analyzing data, or drilldown. Instead, use a list report with a table/chart switch."	"Extract knowledge or insights from objects by using business intelligence features (drilldown for root cause analysis, slice and dice)
+Act on the relevant objects"	"Visual filter bar, where filters are represented as charts
+Switch to the non-visual filter bar without search field is possible
+Data is represented in a chart and a table on one page
+Users can see the impact of their action on  a global key performance indicator (KPI)"		GREEN	Business Application Studio	JS

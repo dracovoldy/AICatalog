@@ -1,0 +1,3 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA02	Data Model	Custom CDS Views - S/4HANA Cloud ABAP Environment (Embedded Steampunk)	"Creating and modifying custom CDS views using S4 HANA Cloud, ABAP Environment.
+Strictly using “ABAP for Cloud Development” language version."	This pattern is used in case where the required CDS view is whitelisted with C1 released contract and has language version as ABAP on Cloud. 											

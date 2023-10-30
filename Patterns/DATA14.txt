@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA14	Data Model	Create App using SAP APIs	"Create a custom app using SAP APIs and some non-SAP APIs and deploy to Cloud Platform	"	This pattern is used when the application should consume an SAP/Non-SAP API to deploy on Cloud Platform. 											

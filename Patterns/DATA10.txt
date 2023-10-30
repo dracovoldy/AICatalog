@@ -1,0 +1,3 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA10	Data Model	Custom Business Object - S/4HANA Cloud ABAP Environment (Embedded Steampunk)	"Create a a RAP Business Object using S4HANA Cloud ABAP Environment (Embedded Steampunk).
+Strictly using “ABAP for Cloud Development” language version."	This pattern is used when for a  extending an existing application by creating new DB tables/views tied directly to S/4HANA and for it, the language is ABAP on Cloud. Use this In-App approach instead of creating a Y/Z objects in the core.											

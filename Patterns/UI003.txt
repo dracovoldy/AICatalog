@@ -1,0 +1,6 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI003	Fiori UI	"List Report;
+Master Detail"	List several objects	Fiori Elements - List Report: A worklist displays a collection of items a user needs to process. Working through the list usually involves reviewing details of the items and taking action. In most cases, the user has to either complete a work item or delegate it.	"Find objects from a large data set
+Act on the relevant objects"	"Filter bar, including a search field
+Objects can be shown in a table or in a chart. Switching between the table and chart is possible.
+Predefined views on the objects are possible, for example All, Open, Assigned. Switching between the views is possible."		GREEN	Business Application Studio	JS

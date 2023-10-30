@@ -1,0 +1,13 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI007	Fiori UI	Wizard	Step by step creation or process	"When to Use the Wizard Floorplan
+The wizard aims to help users by dividing large or complex tasks into segments. Use the wizard if the user has to accomplish a long task (such as filling out a long questionnaire) or a task that is unfamiliar to the user. The flow should consist of a minimum of 3 and a maximum of 8 steps.
+
+You can use the wizard for both create and edit scenarios. For edit scenarios, you can either offer a wizard or let users edit the object page directly, depending on your use case.
+
+When Not to Use the Wizard Floorplan
+If you have a task with only 2 steps or a format that the user is familiar with (for example, it is part of their daily routine), do not use the wizard as it only adds unnecessary clicks to the process. If your process needs more than 8 steps, the wizard will not support those steps, as the process is too long and can be confusing for the user. In this case, consider restructuring the task.
+
+Consider whether the classic edit screens (edit flow or object page) are more suitable for your use case."	"Create or edit an object
+Guide the user through a series of steps
+Task is rather long or unfamiliar for users"	"Minimum of 3 steps, maximum of 8 steps
+Summary that shows the data for all steps"		GREEN	Business Application Studio	JS

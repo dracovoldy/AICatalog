@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA12	Data Model	Custom Analytical Queries	"​Use Custom Analytical Queries to extend queries and cubes	"	This pattern is used when one needs to provide a reporting or analytical capability with the released CDS View of type Cube. This ends up creating an Analytical Queries											

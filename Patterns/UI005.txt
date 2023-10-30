@@ -1,0 +1,3 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI005	Fiori UI	Worklist	List several objects	Fiori Elements - Work List Page: A worklist displays a collection of items a user needs to process. Working through the list usually involves reviewing details of the items and taking action. In most cases, the user has to either complete a work item or delegate it.	Process a predefined set of objects	"Filter bar not needed
+Predefined views on the items are possible, for example All, To Be Assigned, To Be Ordered"		GREEN	Business Application Studio	JS

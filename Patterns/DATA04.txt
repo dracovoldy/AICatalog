@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA04	Data Model	Create metadata annotations - Eclipse	"Modifying annotations of SAP delivered CDS views using Eclipse	"	This pattern is used in case when there is a requirement for adding/overriding the existing annotations for a CDS view											

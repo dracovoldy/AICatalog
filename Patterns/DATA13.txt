@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA13	Data Model	Create table - HANA Cloud	"Create DB tables for large and small volume using CAP	"												

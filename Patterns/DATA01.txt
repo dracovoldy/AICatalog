@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA01	Data Model	Custom CDS Views - Key User Extensibility	Modify existing SAP delivered CDS views using In-App. This includes creating associations of multiple SAP delivered CDS views	This pattern is used in case where the required CDS view is whitelisted with C1 released contract. With this pattern, one can create scenarios like Standard CDS, Analytical Cube, Analytical Dimension, Value Helps and External APIs											

@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI010	APF UI5	Analysis Path Framework	Do not use	Analysis Path Framework: Analysis Path Framework (APF) is a framework for creating interactive, chart-oriented analytical drilldown apps by configuration. APF-based apps enable the user to view and analyze the data of several key performance indicators (KPIs) from different data sources.				GREEN	APF Configuration Modeler	

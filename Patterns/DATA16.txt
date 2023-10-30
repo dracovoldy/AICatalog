@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA16	Data Model	CAP - Create APIs	"Create custom API instead of modifying SAP oData API in BTP using CAP	"	This pattern is used when the application cannot be built using Key-User extensibility / using MDM. It is used in case there are functionalities that are not fullfilled by Manage KPI and Reports app or Multi-dimensional reports.											

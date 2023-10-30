@@ -1,0 +1,27 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI008	Web Dynpro ABAP	"Multidimensional Grid Report;
+WDA Grid"		Multi-dimensional reports (Web Dynpro Apps): As a business user, you use multidimensional analytical reports to analyze your data and display your results in SAP Web Dynpro or your custom Web Dynpro apps. Multidimensional reports allow insight-driven, explorative, and flexible analyses of large amounts of data.	"This type of app provides the following key features:
+
+Presents data in a pivot-like table
+
+Displays data in read-only mode
+
+Shows data in a chart or table
+
+Offers slice-and-dice as well as drill-down functions
+
+Shows subtotals at any level
+
+You can enable runtime extensibility for data sources and then add fields from that data source as dimensions (characteristics) and measures (key figures) to your reports. For more information, see How to Enable Runtime Extensibility in Custom Analytical Queries.
+
+You can sort and filter the data.
+
+You can swap rows and columns.
+
+You can save personalized views (bookmarks) and share them.
+
+You can navigate to other SAP Fiori apps while staying in the same context.
+
+You can open and close the navigation panel.
+
+You can download spreadsheets from multidimensional reports to Google Workspace (special license required). For more information, see How to Use Google Workspace Integration in Multidimensional Reports."			GREEN	Query Browser	

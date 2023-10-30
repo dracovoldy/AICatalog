@@ -1,0 +1,5 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI009	Fiori UI	"Analytical List Report - ALP;
+Drill-Down report;
+Analytics Cloud Story"	"Visualize KPIs;
+Drill Down on the information"	SAP Smart Business KPI: SAP Smart Business drilldown is an analytical app. It enables the user to view and analyze the data of one key performance indicator (KPI). It can also be used to build an Analytical List page using No-Code.				GREEN	Manage KPIs and Reports	

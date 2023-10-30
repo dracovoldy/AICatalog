@@ -1,0 +1,4 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA11	Data Model	Custom Fields and Logic	Use Custom Fields and Logic (Whitelisted tables only) to add fields related to business context	"This pattern is used in case of below scenarios Custom Field: Create custom fields for the table and add it to applications and objects, or add fields already been in the source table to applications and objects.
+Data Source Extension: Add fields to a data source from the source view or the CDS View already associated to the source.
+Custom Logic: Add logics to fill/display the value of the custom fields."											

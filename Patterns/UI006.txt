@@ -1,0 +1,5 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI006	Fiori UI	Object Page		Fiori Elements - Object Page: A worklist displays a collection of items a user needs to process. Working through the list usually involves reviewing details of the items and taking action. In most cases, the user has to either complete a work item or delegate it.	"Display, create, or edit an object
+Get an overview of an object and interact with different parts of the object"	"Flexible header
+Anchor or tab navigation to access the content
+Flexible layout for the content"		GREEN	Business Application Studio	JS

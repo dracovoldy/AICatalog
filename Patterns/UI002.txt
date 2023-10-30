@@ -1,0 +1,5 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI002	Fiori UI	Overview Page - OVP	Provide an overview of information and tasks:	Fiori Elements - Overview Pages: The overview page (OVP) is a data-driven SAP Fiori app type and floorplan that provides all the information a user needs in a single page, based on the user’s specific domain or role. It acts as an entry point to other apps.	"Get an overview of the key tasks and information needed for a specific user role
+React to information"	"Filter bar, including a search field
+Content from different apps is shown on one page
+Content can be displayed in different formats (such as charts, lists, or tables)"		GREEN	Business Application Studio	JS

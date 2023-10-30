@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA18	Data Model	Adobe Forms	"Create the new form using Adobe Service in BTP Cloud Foundry - consume the generated form On-Premise or in BTP	"	This pattern is used when there are custom PDF format required for an object.											

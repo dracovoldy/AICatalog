@@ -1,0 +1,9 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE	FUX_GUIDE	FEATURES	KEYWORDS	COLOR	TOOLS	LANG
+UI004	Fiori UI	Initial Page	Allow navigation to work on one object	"Use the initial page floorplan if:
+The user only needs to work on one object at a time. In this case, the list report floorplan would include a redundant step for viewing a list of items found by the search.
+A typical use case for the initial page floorplan is a scanning app, where each new scan leads to an object with input fields. Once the user has submitted the entries, the screen is shown in read-only mode. The cursor returns to the input field, ready for the user to scan the next object.
+
+Do not use the initial page floorplan if:
+The search is supposed to return a list of objects. This is the scenario for the list report floorplan.
+It is also advisable to use only one input field for finding the object. If you need to include detail views, or allow the user to switch between views, offer these features when displaying the object itself."	Navigate to one object and work on this object	Single input field with value help		GREEN	Business Application Studio	JS
+

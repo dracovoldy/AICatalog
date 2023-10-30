@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA06	Data Model	Use of Unreleased CDS Views	"Consumption or usage of an unreleased CDS View, either as an API or embedded in a custom CDS view is not recommended	"	This pattern is used in case there are no standard whitelisted views with any released contract.											

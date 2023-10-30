@@ -1,0 +1,2 @@
+ID	CATEGORY	SHORT_NAME	USAGE	USECASE											
+DATA05	Data Model	Create custom ABAP DDIC objects - SE11	"Creating custom ABAP DDIC objects (ex. Fields, Data elements, domains) in S/4 HANA using Transaction Code SE11	"	This pattern is used in case there exists no standard ABAP DDIC objects like tables, views, domains, data elements, structures, table types, search helps,  lock objects 											
